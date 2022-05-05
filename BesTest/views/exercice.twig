@@ -1,0 +1,72 @@
+<h2>Formulaire d'ajout exercice</h2>
+
+<form action="/exercice" method="POST"  enctype="multipart/form-data"  autocomplete="off">
+   <input type="hidden" name="_id" value="{{exercice._id}}">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" placeholder="title" value="{{exercice.title}}">
+
+    </div>
+
+    
+<div>
+           <select
+              className='subject'
+              name='subject'
+              value='subject'
+              onChange={(e) => hundelchange(e)}
+          >
+            <option className='subject'>mathematique</option>
+            <option className='subject'>arabic</option>
+            <option className='subject'>french</option>
+            <option className='subject'>english</option>
+            <option className='subject'>social science</option>
+            <option className='subject'>science of life and earth </option>
+          </select>
+    </div>
+
+
+<div>
+           <select
+              className='lesson'
+              name='lesson'
+              value='lesson'
+              onChange={(e) => hundelchange(e)}
+          >
+            <option className='lesson'>lesson1</option>
+            <option className='lesson'>lesson2</option>
+            <option className='lesson'>lesson3</option>
+         
+          </select>
+    </div>
+
+
+    <div class="form-group">
+        <label>level</label>
+        <input type="level" class="form-control" name="level" placeholder="level" value="{{exercice.level}}">
+    </div>
+
+
+ <div class="form-group">
+        <label>price</label>
+        <input type="price" class="form-control" name="price" placeholder="price" value="{{exercice.price}}">
+    </div>
+
+
+
+     <div class="form-group">
+        <label>description</label>
+        <input type="description" class="form-control" name="description" placeholder="description" value="{{exercice.description}}">
+    </div>
+
+<div class="form-group">
+        <label for="type" class="text-white">type</label>
+        <input type="file" name="type" id="type" class="form-control-file text-white" >
+
+ </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+    </div>
+</form>
+

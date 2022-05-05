@@ -1,0 +1,54 @@
+
+<h1> la liste des teachers validés</h1>
+<table class="table table-striped">
+
+<thead>
+        <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>password</th>
+        <th>Matricule</th>
+        <th>Email</th>
+        <th>Creation date</th>
+        <th>address</th>
+        <th>speciality</th>
+        <th>Birthday Date</th>
+        <th>rib</th>
+        <th></th>
+
+        </tr>
+    </thead>
+
+
+    <tbody>
+    {% for teacher in listTeacherV %}
+     <tr>
+           <td>{{teacher.firstname}}</td>
+             <td>{{teacher.lastname}}</td>
+            <td>{{teacher.password}}</td>
+            <td>{{teacher.matricule}}</td>
+            <td>{{teacher.email}}</td>
+            <td>{{teacher.createdAt}}</td>
+             <td>{{teacher.address}}</td>      
+             <td>{{teacher.speciality}}</td>      
+             <td>{{teacher.birthday}}</td>
+             <td>{{teacher.rib}}</td>
+
+
+        </tr>
+
+ {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+    
+     

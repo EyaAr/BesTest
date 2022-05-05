@@ -1,0 +1,50 @@
+
+<h1> la liste des admins </h1>
+<table class="table table-striped">
+
+
+
+<thead>
+        <tr>
+            <th>Matricule</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Creation Date</th>
+            <th></th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit">Log Out</button>
+</form>
+
+    {% for admin in listAdmin %}
+     <tr>
+            <td>{{admin.matricule}}</td>
+            <td>{{admin.email}}</td>
+            <td>{{admin.password}}</td>
+            <td>{{admin.createdAt}}</td>
+            <td>
+            <a href="/admin/update/{{admin._id}}">modifier</a>
+            <a href="/admin/delete/{{admin._id}}" onclick="return confirm('Are you sure to delete this admin ?');">supprimer</a>           
+             </td>
+        </tr>
+
+ {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+    
+     

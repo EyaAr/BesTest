@@ -1,0 +1,16 @@
+<h2> L'envoi d'un feedback</h2>
+
+<form action="/feedback" method="POST" autocomplete="off">
+   <input type="hidden" name="_id" value="{{feedback._id}}">
+    <div class="form-group">
+      <p>
+        <label>Descrption</label>
+        <input type="text" class="form-control" name="description" placeholder="description" value="{{feedback.description}}">
+     </p>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Send</button>
+
+    </div>
+</form>

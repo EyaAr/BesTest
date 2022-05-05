@@ -1,0 +1,78 @@
+<h2>Formulaire d'ajout de teacher</h2>
+
+<form action="/teacherR" method="POST" autocomplete="off">
+   <input type="hidden" name="_id" value="{{teacherR._id}}">
+    <div class="form-group">
+      <p>
+        <label>LastName</label>
+        <input type="text" class="form-control" name="lastname" placeholder="lastname" value="{{teacherR.lastname}}">
+     </p>
+    </div>
+
+ <div class="form-group">
+  <p>
+        <label>FirstName</label>
+        <input type="text" class="form-control" name="firstname" placeholder="firstname" value="{{teacherR.firstname}}">
+  </p>
+    </div>
+
+    <div class="form-group">
+      <p>
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" placeholder="email" value="{{teacherR.password}}">
+     </p>
+    </div>
+
+     <div class="form-group">
+       <p>
+        <label> Matricule</label>
+        <input type="text" class="form-control" name="matricule" placeholder=" matricule" value="{{teacherR.matricule}}">
+        </p>
+
+    </div>
+
+ <div class="form-group">
+        <p>
+        <label> Email</label>
+        <input type="text" class="form-control" name="email" placeholder=" email" value="{{teacherR.email}}">
+          </p>
+
+    </div>
+
+
+<div class="form-group">
+       <p>
+        <label> Address </label>
+        <input type="text" class="form-control" name="address" placeholder=" address" value="{{teacherR.address}}">
+          </p>
+
+   </div>
+
+
+<div class="form-group">
+       <p>
+        <label> Speciality </label>
+        <input type="text" class="form-control" name="speciality" placeholder=" speciality" value="{{teacherR.speciality}}">
+          </p>
+
+    </div>
+
+<div class="form-group">
+       <p>
+        <label> Birth date </label>
+        <input type="date" class="form-control" name="birthday" placeholder=" birthday" value="{{teacherR.birthday}}">
+         </p>
+    </div>
+
+<div class="form-group">
+       <p>
+        <label> Rib bancaire  </label>
+        <input type="number" class="form-control" name="rib" placeholder=" rib" value="{{teacherR.rib}}">
+        </p>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+
+    </div>
+</form>

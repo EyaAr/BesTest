@@ -1,0 +1,61 @@
+
+<h1> la liste des enfants </h1>
+<table class="table table-striped">
+
+<thead>
+        <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>password</th>
+        <th>Matricule</th>
+        <th>Email</th>
+        <th>Creation date</th>
+        <th>address</th>
+        <th>Score</th>
+        <th>Birth date</th>
+        <th>Level</th>
+
+
+        <th></th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+    {% for kid in listKid %}
+     <tr>
+           <td>{{kid.firstname}}</td>
+             <td>{{kid.lastname}}</td>
+            <td>{{kid.password}}</td>
+            <td>{{kid.matricule}}</td>
+            <td>{{kid.email}}</td>
+            <td>{{kid.createdAt}}</td>
+             <td>{{kid.address}}</td>      
+             <td>{{kid.score}}</td>
+            <td>{{kid.birthday}}</td>
+              <td>{{kid.level}}</td>
+
+
+
+            <td>
+           <a href="/kid/deleteK/{{kid._id}}">Delete</a>
+           <a href="/feedback">Send feedback</a>
+
+             </td>
+        </tr>
+
+ {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+    
+     

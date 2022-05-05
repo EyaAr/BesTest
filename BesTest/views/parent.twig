@@ -1,0 +1,60 @@
+<h2>Formulaire d'ajout de parent</h2>
+
+
+<form action="/parentR" method="POST" autocomplete="off">
+   <input type="hidden" name="_id" value="{{parentR._id}}">
+    <div class="form-group">
+        <p>
+        <label>LastName</label>
+        <input type="text" class="form-control" name="lastname" placeholder="lastname" value="{{parentR.lastname}}">
+        </p>
+    </div>
+
+ <div class="form-group">
+  <p>
+        <label>FirstName</label>
+        <input type="text" class="form-control" name="firstname" placeholder="firstname" value="{{parentR.firstname}}">
+</p>
+    </div>
+
+    <div class="form-group">
+    <p>
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" placeholder="email" value="{{parentR.password}}">
+    </p>
+    </div>
+
+     <div class="form-group">
+     <p>
+        <label> Matricule</label>
+        <input type="text" class="form-control" name="matricule" placeholder=" matricule" value="{{parentR.matricule}}">
+   </p>
+    </div>
+
+ <div class="form-group">
+ <p>
+        <label> Email</label>
+        <input type="text" class="form-control" name="email" placeholder=" email" value="{{parentR.email}}">
+    </p>
+    </div>
+
+
+<div class="form-group">
+<p>
+        <label> Address </label>
+        <input type="text" class="form-control" name="address" placeholder=" address" value="{{parentR.address}}">
+  </p>
+    </div>
+
+<div class="form-group">
+<p>
+        <label> Rib bancaire  </label>
+        <input type="number" class="form-control" name="rib" placeholder=" rib" value="{{parentR.rib}}">
+   </p>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a  href="/kid"><i class="fa fa-list-alt"></i>  add kid account</a>
+    </div>
+</form>

@@ -1,0 +1,56 @@
+
+<h1> la liste des lessons </h1>
+<table class="table table-striped">
+
+<thead>
+        <tr>
+        <th>title</th>
+        <th>subject</th>
+        <th>level</th>
+        <th>price</th>
+        <th>description</th>
+        <th>Creation date</th>
+        <th>Type</th>
+
+  
+
+        <th></th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+    {% for lesson in listL %}
+     <tr>
+           <td>{{lesson.title}}</td>
+             <td>{{lesson.subject}}</td>
+            <td>{{lesson.level}}</td>
+            <td>{{lesson.price}}</td>
+            <td>{{lesson.description}}</td>
+            <td>{{lesson.createdAt}}</td>
+            <td>{{lesson.type}}</td>
+
+         
+
+
+            <td>
+           <a href="/lesson/deleteL/{{lesson._id}}">Delete</a>
+
+             </td>
+        </tr>
+
+ {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+    
+     

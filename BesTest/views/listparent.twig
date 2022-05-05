@@ -1,0 +1,53 @@
+
+<h1> la liste des requettes des parents </h1>
+<table class="table table-striped">
+
+<thead>
+        <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>password</th>
+        <th>Matricule</th>
+        <th>Email</th>
+        <th>Creation date</th>
+        <th>address</th>
+        <th>rib</th>
+        <th></th>
+        </tr>
+    </thead>
+
+
+    <tbody>
+    {% for parent in listParent %}
+     <tr>
+           <td>{{parent.firstname}}</td>
+             <td>{{parent.lastname}}</td>
+            <td>{{parent.password}}</td>
+            <td>{{parent.matricule}}</td>
+            <td>{{parent.email}}</td>
+            <td>{{parent.createdAt}}</td>
+             <td>{{parent.address}}</td>      
+             <td>{{parent.rib}}</td>
+
+            <td>
+            <a href="/admin/validateP/{{parent._id}}" >Validate</a>
+           <a href="/admin/deleteP/{{parent._id}}">Deny</a>
+
+             </td>
+        </tr>
+
+ {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+    
+     
